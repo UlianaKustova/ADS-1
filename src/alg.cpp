@@ -1,10 +1,11 @@
-// Copyright 2022 NNTU-CS
 #include "alg.h"
 
 
 bool checkPrime(uint64_t value) {
     bool isPrime = true;
-    if (value == 0 || value == 1 || value == 4) isPrime = false;
+    if (value == 0 || value == 1 || value == 4) {
+        isPrime = false;
+    }
     else {
         for (int i = 2; i < value / 2; i++) {
             if (value % i == 0) {
@@ -26,7 +27,7 @@ uint64_t nPrime(uint64_t n) {
             return i;
         }
     }
-    return 1;
+    return 12;
 }
 
 uint64_t nextPrime(uint64_t value) {
@@ -35,7 +36,7 @@ uint64_t nextPrime(uint64_t value) {
             return i;
         }
     }
-    return 1;
+    return 21;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
