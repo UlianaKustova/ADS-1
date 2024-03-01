@@ -1,3 +1,4 @@
+// Copyright 2022 NNTU-CS
 #include "alg.h"
 
 
@@ -5,8 +6,7 @@ bool checkPrime(uint64_t value) {
     bool isPrime = true;
     if (value == 0 || value == 1 || value == 4) {
         isPrime = false;
-    }
-    else {
+    } else {
         for (int i = 2; i < value / 2; i++) {
             if (value % i == 0) {
                 isPrime = false;
